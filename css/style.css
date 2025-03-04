@@ -1,0 +1,1348 @@
+*,::before,::after{ margin:0; box-sizing: border-box;}
+a{ text-decoration: none;}
+button{  cursor: pointer; padding: 0;}
+img{ vertical-align: bottom;}
+iframe{ border: none;}
+:disabled{ cursor: not-allowed;}
+label{ display: inline-block;}
+abbr[title]{ cursor: help;}
+ul{list-style: none; padding: 0; }
+
+html{ font-size: 15px;
+     --red:#ca3c3c;
+     --ff:proxima, sans-serif;
+}
+body{
+     font:100 16px var(--ff);
+}
+.reg{ font-weight: 400; }
+.container{
+     max-width: 1200px;
+     margin: auto;
+     padding: 0 1rem;
+}
+.thin{ font-weight: 100;}
+
+.row{ display: flex; flex-flow: row wrap; margin:  0 -1rem; }
+
+[class^="col-"]{ flex: 1 0 auto; padding: 0 1rem; }
+
+.col-1{ flex-basis:calc(1/12 * 100%); max-width: calc(1/12 * 100%); }
+.col-2{ flex-basis:calc(2/12 * 100%); max-width: calc(2/12 * 100%); }
+.col-3{ flex-basis:calc(3/12 * 100%); max-width: calc(3/12 * 100%); }
+.col-4{ flex-basis:calc(4/12 * 100%); max-width: calc(4/12 * 100%); }
+.col-5{ flex-basis:calc(5/12 * 100%); max-width: calc(5/12 * 100%); }
+.col-6{ flex-basis:calc(6/12 * 100%); max-width: calc(6/12 * 100%); }
+.col-7{ flex-basis:calc(7/12 * 100%); max-width: calc(7/12 * 100%); }
+.col-8{ flex-basis:calc(8/12 * 100%); max-width: calc(8/12 * 100%); }
+.col-9{ flex-basis:calc(9/12 * 100%); max-width: calc(9/12 * 100%); }
+.col-10{ flex-basis:calc(10/12 * 100%); max-width: calc(10/12 * 100%); }
+.col-11{ flex-basis:calc(11/12 * 100%); max-width: calc(11/12 * 100%); }
+.col-12{ flex-basis:calc(12/12 * 100%); max-width: calc(12/12 * 100%); }
+.flex{ display: flex;}
+.align-center{ align-items: center;}
+.justify-right{ justify-content: right;}
+.justify-center{ justify-content: center;}
+.justify-space-bet{ justify-content: space-between;}
+
+/*leyout*/
+
+/*header*/
+
+header { 
+     background-color: #537543;
+     color: #fff;
+     position: sticky;
+     top: 0; z-index: 10;
+}
+header img:hover{
+     transform: rotateY(360deg);
+     transition: all 2s ease-in-out;
+}
+header a{ 
+     color: #f1e9e9;
+     line-height: 62px;
+     display: inline-block; 
+     padding: 0 8px; 
+     font-weight: 600;
+     text-align: center; 
+}
+header a:hover{
+     border-bottom: 3px solid chartreuse;
+     background-color: #fff;
+     color: #3e5831;
+     border-radius: 20px;
+     transition: all 1s ease-in-out;
+     transform: rotate(360deg);
+     border-bottom: 5px solid chartreuse;
+     border-top: 5px solid chartreuse;
+}
+header .navbar{
+     margin-top: 30px;
+}
+header nav ul{
+     display: flex;
+     padding: 0px 60px;
+     margin-left: 70px;
+     }
+
+header nav li{
+     float: left;
+     margin: 5px 5px;
+}
+header .bun1{
+     background: none;
+     border: none;
+     color: #fff;
+     margin-right: 100px;
+     font-size: 24px;
+}
+.samp {
+     display: none;
+}
+
+header .input .input1{
+     width: 80%;
+     height: 30px;
+     font-size: 20px;
+     padding: 10px;
+     border: none;
+     margin-top: 50px;
+     border-radius: 13px;
+}
+header .input .input1::placeholder{
+     color: #f51101;
+}
+header .input i{
+     font-size: 20px;
+     float: right;
+     margin: 0px 0px 0px 0px;
+}
+
+/*secson*/
+
+.ware{
+     background-color: #73a94f;
+     height: 636px;
+     background-position: center;
+     background-size: cover;
+}
+
+.ware .col-7 .photo img{
+     width: 100%;
+     height: auto;
+     background-position: center;
+     background-size: cover ;
+}
+
+.haiding h3{
+     color: #fff;
+     font-size: 26px;
+     margin: 165px 0px 0px 141px ;
+}
+
+.haiding h1{
+     color: #fff;
+     font-size: 81px;
+     margin:-21px 0px 0px 71px ;
+}
+
+.pairagraf p{
+     color: #fff;
+     font-size: 17px;
+     margin: 35px 0px 0px 71px;
+}
+
+.bun2 button{
+     background-color: #e6ca48;
+     color: #3e5831;
+     font-size: 21px;
+     width: 195px;
+     height: 36px;
+     margin: 35px 0px 0px 71px;
+     border: none;
+     border-radius:30px;
+}
+.bun2 button:hover{
+     background-color: #3e5831;
+     color: #e6ca48;
+     transition: all 1s ease-in-out;
+}
+
+/*secson2*/
+
+.ware2{
+     width: 100%;
+     height: auto;
+     background-size: cover;
+     background-position: center;
+}
+.ware2 .col-6 img{
+     width: 100%;
+     height: 550px;
+     margin: 70px 0px;
+}
+.ware2 .col-6 img:hover{
+     transform: rotateX(360deg);
+     transition: all 2s ease-in-out;
+}
+.ware2 .ware2text h1{
+     color: #537543;
+     font-size: 55px;
+     margin: 140px 0px 0px 30px;
+}
+.ware2 .ware2text h3{
+     color: #537543;
+     font-size: 32px;
+     margin: 5px 0px 0px 20px;
+}
+.ware2 .ware2text p{
+     color: #537543;
+     font-size: 28px;
+     margin: 20px 0px 0px 25px;
+}
+.ware2 .bun3{
+     width: 200px;
+     height: 45px;
+     border-radius: 30px;
+     font-size: 22px;
+     border: none;
+     margin: 20px 0px 0px 60px;
+}
+.ware2 .bun3:hover{
+     background-color: #537543;
+     color: #f2cb39;
+}
+
+
+/*secson3*/
+
+.ware3{
+     background-color: #537543;
+     height: 436px;
+     background-position: center;
+     background-size: cover;
+}
+
+.ware3 .container .col-12 .row .col-4 .styar1 i{
+     font-size: 96px;
+     color: gold;
+     margin-top: 75px;
+}
+.ware3 .container .col-12 .row .col-4 .styar1 i:hover{
+     color: rgb(166, 253, 5);
+     transform: rotate(360deg);
+     transition: all 1s ease-in-out;
+}
+
+.ware3 .container .col-12 .row .col-4 {
+text-align: center;
+}
+
+.ware3 .container .col-12 .row .col-4 .fast h1{
+     font-size: 27px;
+     color:#fff;
+     margin-top: 44px;
+}
+
+.ware3 .container .col-12 .row .col-4 .fast p{
+     font-size: 17px;
+     color: #fff;
+     margin-top: 26px;
+}
+
+/*secson4*/
+
+.ware4{
+     background-color: #709f53;
+     height: auto;
+     background-position: center;
+     background-size: cover;
+}
+.ware4 .safeoll:hover{
+     transform: scaleX(1.5);
+     transition: all 1s ease-in-out;
+}
+.alingtex h1 {
+     text-align: center;
+     font-size: 60px;
+     color: #fff;
+     margin-top: 30px;
+     margin-bottom: 30px;
+}
+
+.alingtex p{
+     text-align: center;
+     font-size: 27px;
+     color: #fff;
+     margin-top: -20px;
+}
+
+.safe img{
+     width: 100%;
+     height: 424px;
+     margin-top: 50px;
+     border-radius: 20px 20px 0px 0px;
+     box-shadow: 0px 0px 15px 0px #000 ;
+}
+
+.safe .chef3{
+     background-color: #535353;
+     
+}
+
+.safetext{
+     text-align: center;
+     background-color: #537543;
+     border-radius: 0px 0px 20px 20px;
+     box-shadow: 0px 0px 10px 0px #000;
+}
+.safetext h4{
+color: #fff;
+padding-top: 20px;
+font-size: 25px;
+}
+
+.safetext p{
+     color: #fff;
+     padding-bottom: 25px;
+     font-size: 19px;
+}
+
+.center p{
+     text-align: center;
+     font-size: 22px;
+     color: #fff;
+     margin-top: 50px;
+     margin-bottom: 50px;
+}
+
+/*secson5*/
+
+.ware5{
+     background-color: #dd982c;
+     height: auto;
+     background-size: cover;
+}
+
+.ware5 .container .col-12 .row .col-6 img{
+     width: 100%;
+     height: auto;
+     border-radius: 25px;
+     margin: 78px 0px;
+     box-shadow: 0px 0px 25px 0px #000;
+}
+.ware5 .container .col-12 .row .col-6 img:hover{
+     transform: scale(1.2);
+     transition:  all 1s ease-in-out;
+}
+.ware5 .container .col-12 .row .col-6 .making h2{
+   color: #fff;
+   font-size: 30px;
+   margin: 95px 0px 0px 45px;
+}
+
+.ware5 .container .col-12 .row .col-6 .making p{
+     color: #fff;
+   font-size: 20px;
+   margin: 52px 0px 0px 45px;
+}
+
+.ware5 .container .col-12 .row .col-6 .making .bun4{
+     width: 170px; 
+     height: 33px;
+     margin: 80px 0px  0px 45px ;
+     font-size: 18px;
+     background-color: #fff;
+     color: #3e5831;
+     border: none;
+     border-radius: 30px;
+}
+
+/*secson6*/
+
+.ware6{
+     background-color: #537842;
+     height: auto;
+     background-size: cover;
+}
+
+.ware6 .container .col-12 .row {
+     text-align: center;
+}
+
+.testi h1{
+     color: #fff;
+     font-size:70px;
+     margin-top:70px ;
+}
+
+.testi p{
+     color: #fff;
+     font-size:22px;
+     margin-top:70px ;
+}
+
+.testi h5{
+     color: #fff;
+     font-size:25px;
+     margin-top:50px;
+     margin-bottom: 50px;
+}
+
+/*secson7*/
+
+.ware7{
+     background-color: #e6ca48;
+     height: auto;
+     background-size: cover;
+}
+
+.ware7 .container{
+     text-align: center;
+}
+
+.manus h1{
+     color: #537942;
+     font-size: 70px;
+     margin-top: 50px;
+}
+
+.manus h3{
+     color: #537942;
+     font-size: 29px;
+     margin-top: 21px;
+}
+.manus p{
+     color: #537942;
+     font-size: 11px;
+     margin-top: 31px;
+     margin-bottom: 40px;
+}
+
+/*secson8*/
+
+.ware8{
+     background-color: #7cb258;
+     height: auto;
+     background-size: cover;
+}
+.nasimg img{
+     width: 100% ;
+     height: auto ;
+     margin-top: 75px;
+}
+.nasimg-2 img{
+     width: 100%;
+     height: auto;
+     margin-top: 75px;
+
+}
+.nasimg-2 .ddis4{
+     margin-top: 90px;
+}
+.nasimg-2 .ddis5{
+     margin-top: 95px;
+}
+.nasimg-2 .ddis6{
+     margin-top: 100px;
+     margin-bottom: 100px;
+}
+.nasitext h2{
+     color: #fff;
+     font-size: 30px;
+}
+.nasitext samp{
+     color: #fff;
+      font-size: 30px;
+}
+.nasitext p{
+     color: #fff;
+     font-size: 17px;
+}
+.nasitext .text-1{
+     margin-top: 105px;
+}
+.nasitext .text-2{
+     margin-top: 140px;
+}
+.nasitext .text-3{
+     margin-top: 135px;
+}
+.nasitext .text-4{
+     margin-top: 98px;
+}
+.nasitext .text-5{
+     margin-top: 150px;
+}
+.nasitext .text-6{
+     margin-top: 135px;
+}
+
+/*secson9*/
+
+.ware9{
+     background-color: #fff;
+     height: auto;
+     background-size: cover;
+}
+.ware9 .container{
+     text-align: center;
+}
+.follow h1{
+     color: #68914f;
+     font-size: 61px;
+     margin-top: 58px;
+}
+.follow p{
+     color: #68914f;
+     font-size: 20px;
+     margin-top: 35px;
+}
+.follow input {
+     width: 70% ;
+     height: 40px ;
+     border-radius: 30px ;
+     margin-top: 35px;
+     padding: 0px 0px 0px 23px ;
+     font-size: 19px;
+     
+}
+.follow .bun5 {
+     width: 50%; 
+     height: 40px;
+     background-color: #3e5831;
+     color: #fff;
+     border: none;
+     border-radius: 30px;
+     margin-top: 28px ;
+     font-size: 23px;
+     margin-bottom: 50px;
+}
+
+/*footer*/
+
+footer{
+     background-color: #537942;
+     height: auto;
+     background-size: cover;
+}
+footer .container .row .col-4 h3{
+color: #fff;
+font-size: 35px;
+margin:50px 0px 0px ;
+}
+footer .container .row .col-4 p{
+     color: #fff;
+     font-size: 18px;
+     margin: 18px 0px 0px  0px;
+}
+footer .container .row .col-4 ul li a i{
+     border: none;
+     float: left;
+     margin: 17px 8px 8px ;
+     justify-content: center;
+     border-radius: 25px;
+     padding: 5px;
+     font-size: 21px;
+     background-color: #fff;
+     color: #3e5831;
+}
+footer .container .row .col-4 ul li a i:hover{
+     transform: rotate(360deg);
+     transition: all 1s ease-in-out;
+}
+footer .container .row .row-1{
+     float: left;
+}
+footer .container .row .row-1 h3{
+     color: #fff;
+     font-size: 35px;
+     float: left;
+     margin-top: 50px;
+}
+footer .container .row  .row-1 ul{ 
+     margin: 105px 0px 30px ;
+}
+footer .container .row  .row-1 ul li{
+     margin: 16px 0px 0px 0px;
+}
+footer .container .row  .row-1 ul li a{
+     color: #fff;
+     font-size: 18px;
+     
+}
+
+/*ricponsiv style*/
+
+@media(max-width: 425px){
+     
+     .col-c-6{ flex-basis:calc(6/12 * 100%); max-width: calc(6/12 * 100%); }
+     .col-c-3{ flex-basis:calc(3/12 * 100%); max-width: calc(3/12 * 100%); }
+     .col-c-8{ flex-basis:calc(8/12 * 100%); max-width: calc(8/12 * 100%); }
+     .col-c-4{ flex-basis:calc(4/12 * 100%); max-width: calc(4/12 * 100%); }
+     .col-c-12{ flex-basis:calc(12/12 * 100%); max-width: calc(12/12 * 100%); }
+
+
+/*header*/
+
+header img{
+     width: 100%;
+}
+
+     .collapse {
+          display: none;
+      }
+      .samp{
+          display: block;
+          float: right;
+          width: 65px;
+          height: 30px;
+          background: transparent;
+          border: 2px solid;
+          border-color: #f6f5fc;
+          margin-top: -47px;
+          margin-bottom: 20px;
+          margin-right: 10px;
+          border-radius: 10px;
+       }
+       header nav ul {
+          display: block;
+          margin-left: -50px;
+       }
+       header a{
+          line-height: 20px;
+       }
+       header .input .input1 {
+          margin-top: 15px;
+          margin-bottom: 15px;
+       }
+       .samp samp{
+          display: block;
+          height: 2px;
+          background: #eae9f1;
+          width: 70%;
+          margin: 5px auto;
+       }
+
+       /*ware1*/
+
+     .ware{
+          height: auto;
+     }
+     .ware .col-7 .photo img {
+          margin-top: 20px;
+     }
+
+       .haiding h3 {
+          font-size: 8px;
+          margin: 30px 0px 0px 14px;
+      }
+      .haiding h1 {
+          font-size: 23px;
+          margin: -3px 0px 0px -5px;
+      }
+      .pairagraf p {
+          font-size: 8px;
+          margin: 5px 0px 0px 0px;
+      }
+      .bun2 button {
+          font-size: 12px;
+          width: 85px;
+          height: 30px;
+          margin: 11px 0px 10px 0px;
+      }
+
+/*ware2*/
+
+     .ware2{
+          height: 180px;
+     }
+     .ware2 .col-6 img {
+          height: 150px;
+          margin: 15px 0px;
+      }
+      .ware2 .ware2text h1 {
+          font-size: 12px;
+          margin: 38px 0px 0px -15px;
+      }
+      .ware2 .ware2text h3 {
+          font-size: 10px;
+          margin: 5px 0px 0px -15px;
+      }
+      .ware2 .ware2text p {
+          font-size: 6px;
+          margin: 3px 0px 0px -15px;
+      }
+      .ware2 .bun3 {
+          width: 75px;
+          height: 20px;
+          font-size: 11px;
+          margin: 5px 0px 0px -8px;
+      }
+
+/*ware3*/
+        
+     .ware3{
+          height: auto;
+     }
+     
+     .ware3 .container .col-12 .row .col-4 .styar1 i {
+          font-size: 50px;
+          margin-top: 30px;
+      }
+      .ware3 .container .col-12 .row .col-4 .fast h1 {
+          font-size: 9px;
+          margin-top: 14px;
+      }
+      .ware3 .container .col-12 .row .col-4 .fast p {
+          font-size: 7px;
+          margin-top: 8px;
+          margin-bottom: 15px;
+      }
+
+/*ware4*/
+
+     .alingtex h1 {
+          font-size: 28px;
+          margin-top: 15px;
+      }
+      .alingtex p {
+          font-size: 14px;
+          margin-top: -30px;
+      }
+      .safe img{
+          height: 100px;
+          margin-top: 20px;
+      }
+      .safetext h4 {
+          padding-top: 10px;
+          font-size: 15px;
+      }
+      .safetext p {
+          padding-top: 5px;
+          padding-bottom: 18px;
+          font-size: 10px;
+      }
+      .center p {
+          font-size: 9px;
+          margin-top: 20px;
+          margin-bottom: 25px;
+      }
+
+/*ware5*/
+
+     .ware5{
+          height: auto;
+     }
+     .ware5 .container .col-12 .row .col-6 img {
+          margin: 25px 0px;
+     }
+     .ware5 .container .col-12 .row .col-6 .making h2 {
+          font-size: 7px;
+          margin: 30px 0px 0px 0px;
+      }
+      .ware5 .container .col-12 .row .col-6 .making p {
+          font-size: 8px;
+          margin: 5px 0px 0px 0px;
+      }
+      .ware5 .container .col-12 .row .col-6 .making .bun4 {
+          width: 58px;
+          height: 18px;
+          margin: 7px 0px 0px 10px;
+          font-size: 9px;
+          margin-bottom: 10px;
+      }
+
+/*ware6*/
+
+     .ware6 .testi h1 {
+          font-size: 30px;
+          margin-top: 20px;
+      }
+      .ware6 .testi p {
+          font-size: 10px;
+          margin-top: 10px;
+      }
+      .ware6 .testi h5 {
+          font-size: 15px;
+          margin-top: 15px;
+          margin-bottom: 20px;
+      }
+
+/*ware7*/
+
+     .manus h1 {
+          font-size: 25px;
+          margin-top: 20px;
+      }
+      .manus h3 {
+          font-size: 15px;
+          margin-top: 7px;
+      }
+      .manus p {
+          font-size: 7px;
+          margin-top: 10px;
+          margin-bottom: 25px;
+      }
+
+/*ware8*/
+
+     .ware8 .col-1{
+          display: none;
+     }
+
+/*nasi-1*/
+     .nasimg img {
+          margin-top: 25px;
+      }
+      .nasitext h2 {
+          font-size: 9px;
+      }
+      .nasitext samp {
+          font-size: 10px;
+      }
+      .nasitext p {
+          font-size: 5px;
+      }
+      .nasitext .text-1 {
+          margin-top: 25px;
+      }
+      .nasitext .text-2 {
+          margin-top: 5px;
+      }
+      .nasitext .text-3 {
+          margin-top: 7px;
+      }
+
+/*nasi-2*/
+     .nasimg-2 .ddis4 {
+          margin-top: 27px;
+      }
+      .nasimg-2 .ddis5 {
+          margin-top: 25px;
+      }
+      .nasimg-2 .ddis6 {
+          margin-top: 35px;
+          margin-bottom: 50px;
+      }
+      .nasitext .text-4 {
+          margin-top: 22px;
+      }
+      .nasitext .text-5 {
+          margin-top: 5px;
+      }
+      .nasitext .text-6 {
+          margin-top: 5px;
+      }
+
+/*ware9*/
+
+.follow h1 {
+     font-size: 30px;
+     margin-top: 15px;
+ }
+ .follow p {
+     font-size: 10px;
+     margin-top: 7px;
+ }
+ .follow input {
+     height: 30px;
+     margin-top: 15px;
+     padding: 0px 0px 0px 12px;
+     font-size: 15px;
+ }
+ .follow .bun5 {
+     width: 40%;
+     height: 25px;
+     margin-top: 10px;
+     font-size: 16px;
+     margin-bottom: 20px;
+ }
+
+/*footer*/
+
+footer .container .row .col-4 h3 {
+     font-size: 23px;
+ }
+ footer .container .row .col-4 p {
+     font-size: 12px;
+ }
+ footer .container .row .row-1 h3 {
+     font-size: 23px;
+ }
+ footer .container .row .row-1 ul {
+     margin: 90px 0px 30px;
+ }
+ footer .container .row .row-1 ul li {
+     margin: 7px 0px 0px 0px;
+ }
+ footer .container .row .row-1 ul li a {
+     margin-bottom: 5px;
+     font-size: 12px;
+ }
+ footer .container .row .col-4 ul li a i {
+     font-size: 30px;
+ }
+}
+
+
+@media(min-width: 426px) and (max-width: 768px){
+
+     .col-b-2{ flex-basis:calc(2/12 * 100%); max-width: calc(2/12 * 100%); }
+     .col-b-3{ flex-basis:calc(3/12 * 100%); max-width: calc(3/12 * 100%); }
+     .col-b-6{ flex-basis:calc(6/12 * 100%); max-width: calc(6/12 * 100%); }
+
+/*header*/
+
+
+
+     .collapse{
+          display: none;
+     }
+     header .input  {
+          margin: -105px 0px 0px -105px;
+     }
+     header .input .input1 {
+          margin-top: 150px;
+          margin-left: 20px;
+     }
+     header nav ul {
+          display: block;
+          margin-top: 50px;
+          margin-left: 10px;
+      }
+     header nav li {
+          margin: 5px 50px;
+      }
+      header a {
+          padding: 0px;
+          margin: -20px 15px;
+      }
+     .samp{
+          display: block;
+          float: right;
+          width: 80px;
+          height: 40px;
+          background: transparent;
+          border: 2px solid;
+          border-color: #f6f5fc;
+          margin-top: 30px;
+          margin-right: 80px;
+          margin-bottom: 20px;
+          border-radius: 10px;
+       }
+       .samp samp{
+          display: block;
+          height: 2px;
+          background: #eae9f1;
+          width: 70%;
+          margin: 5px auto;
+       }
+      
+     /*ware*/
+
+     .ware{
+          height: auto;
+     }
+     .ware .col-7 .photo img {
+          margin-bottom: 20px;
+     }
+
+     .haiding h3 {
+          font-size: 11px;
+          margin: 44px 0px 0px 44px;
+      }
+      .haiding h1 {
+          font-size: 28px;
+          margin: -5px 0px 0px 23px;
+      }
+      .pairagraf p {
+          font-size: 11px;
+          margin: 10px 0px 0px 32px;
+      }
+      .bun2 button {
+          font-size: 14px;
+          width: 103px;
+          height: 24px;
+          margin: 14px 0px 0px 29px;
+      }
+      
+/*ware2*/
+
+.ware2{
+     height: 325px;
+}
+.ware2 .col-6 img {
+     height: 275px;
+     margin: 30px 0px;
+ }
+ .ware2 .ware2text h1 {
+     font-size: 25px;
+     margin: 75px 0px 0px 5px;
+ }
+ .ware2 .ware2text h3 {
+     font-size: 14px;
+     margin: 5px 0px 0px 5px;
+ }
+ .ware2 .ware2text p {
+     font-size: 10px;
+     margin: 10px 0px 0px 5px;
+ }
+ .ware2 .bun3 {
+     width: 140px;
+     height: 32px;
+     border-radius: 30px;
+     font-size: 20px;
+     border: none;
+     margin: 10px 0px 15px 35px;
+ }
+ 
+      
+
+/*ware3*/
+
+.ware3{
+     height: 390px;
+}
+.ware3 .container .col-12 .row .col-4 .fast h1 {
+     font-size: 18px;
+ }
+ .ware3 .container .col-12 .row .col-4 .fast p {
+     font-size: 13px;
+}
+.ware3 .container .col-12 .row .col-4 .styar1 i {
+     margin-top: 55px;
+ }
+
+ /*ware4*/
+
+ .safetext h4 {
+     font-size: 20px;
+ }
+ .safetext p {
+     font-size: 15px;
+ }
+ .center p {
+     font-size: 11px;
+ }
+
+ /*ware5*/
+
+ .ware5{
+     height: auto;
+ }
+
+ .ware5 .container .col-12 .row .col-6 img {
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+ .ware5 .container .col-12 .row .col-6 .making h2 {
+     font-size: 15px;
+     margin: 40px 0px 0px 0px;
+ }
+ .ware5 .container .col-12 .row .col-6 .making p {
+     font-size: 10px;
+     margin: 15px 0px 0px 0px;
+ }
+ .ware5 .container .col-12 .row .col-6 .making .bun4 {
+     width: 95px;
+     height: 28px;
+     margin: 15px 0px 10px 35px;
+     font-size: 13px;
+ }
+
+ /*ware6*/
+
+.ware6{
+     height: 230px;
+}
+
+ .testi h1 {
+     font-size: 60px;
+     margin-top: 20px;
+ }
+ .testi p {
+     font-size: 12px;
+     margin-top: 20px;
+ }
+ .testi h5 {
+     margin-top: 18px;
+ }
+
+ /*ware7*/
+
+.ware7{
+     height: 220px; 
+}
+
+ .manus h1 {
+     font-size: 45px;
+     margin-top: 15px;
+ }
+ .manus h3 {
+     font-size: 26px;
+     margin-top: 4px;
+ }
+ .manus p {
+     font-size: 13px;
+     margin-top: 15px;
+ }
+
+ /*ware8*/
+
+.ware8{
+     height: auto;
+}
+
+ .nasimg-2 img {
+     width: 100%;
+     height: auto;
+     margin-top: 75px;
+ }
+ .nasimg-2 .ddis4 {
+     margin-top: 75px;
+ }
+ .nasitext h2 {
+     font-size: 15px;
+ }
+ .nasitext .text-1 {
+     margin-top: 75px;
+ }
+ .nasitext samp {
+     font-size: 18px;
+ }
+ .nasitext p {
+     font-size: 10px;
+ }
+ .nasitext .text-2 {
+     margin-top: 45px;
+ }
+ .nasitext .text-3 {
+     margin-top: 45px;
+ }
+ .nasitext .text-4 {
+     margin-top: 75px;
+ }
+ .nasimg-2 .ddis5 {
+     margin-top: 26px;
+ }
+ .nasitext .text-5 {
+     margin-top: 40px;
+ }
+ .nasimg-2 .ddis6 {
+     margin-top: 40px;
+ }
+ .nasitext .text-6 {
+     margin-top: 45px;
+ }
+
+ /*ware9*/
+
+ .ware9{
+     height: 380px;
+ }
+
+ .follow h1 {
+     font-size: 50px;
+     margin-top: 20px;
+ }
+ .follow p {
+     font-size: 11px;
+     margin-top: 10px;
+ }
+
+ /*footer*/
+
+
+ footer .container .row{
+     padding: 0px;
+ }
+
+ .footer .container .row .col-8 {
+     padding: 0px;
+ }
+ footer .container .row .col-8 .row-1 {
+     padding: 0px;
+ }
+ footer .container .row .col-4 p {
+     font-size: 14px;
+     padding-top: 7px;
+ }
+ footer .container .row .col-4 ul li a i{
+     margin: 17px 2px 2px;
+ }
+ footer .container .row .col-8 .row-1 h3{
+     padding-top: 30px;
+     padding-right: 30px;
+ }
+
+}
+ 
+
+@media(min-width: 769px) and (max-width: 992px){
+
+     .col-a-2{ flex-basis:calc(2/12 * 100%); max-width: calc(2/12 * 100%); }
+     .col-a-3{ flex-basis:calc(3/12 * 100%); max-width: calc(3/12 * 100%); }
+
+/*header*/
+
+
+header nav ul {
+     padding: 0px 40px;
+     margin-left: 15px;
+     margin-right: -25px;
+ }
+
+/*ware*/
+
+.ware{
+     height: 475px;
+}
+
+.haiding h1 {
+     font-size: 53px;
+     margin-top: -10px;
+}
+.haiding h3{
+     font-size: 16px;
+}
+.pairagraf p {
+     font-size: 12px;
+     margin: 20px 0px 0px 71px;
+ }
+
+/*ware2*/
+
+.ware2{
+     height: 540px;
+}
+.ware2 .col-6 img{
+     height: 410px;
+}
+.ware2 .ware2text h1 {
+     font-size: 42px;
+     margin: 105px 0px 0px 15px;
+ }
+ .ware2 .ware2text h3 {
+     font-size: 25px;
+ }
+ .ware2 .ware2text p {
+    font-size: 17px;
+ }
+ 
+
+/*ware4*/
+
+.ware4{
+     height: 750px;
+}
+.ware4 .safe img {
+     height: 310px;
+}
+.safetext p {
+     font-size: 15px;
+ }
+ .center p {
+     font-size: 16px;
+}
+
+/*ware5*/
+
+.ware5 {
+     height: 440px;
+}
+.ware5 .container .col-12 .row .col-6 .making h2 {
+     margin-left: 0px;
+     font-size: 25px;
+}
+.ware5 .container .col-12 .row .col-6 .making p {
+     margin-left: 0px;
+     font-size: 17px;
+}
+.ware5 .container .col-12 .row .col-6 .making .bun4 {
+     margin-top: 40px;
+}
+/*ware6*/
+
+.ware6{
+     height: 320px;
+}
+
+.testi h1 {
+     margin-top: 35px;
+ }
+ .testi p {
+     margin-top: 20px;
+ }
+ .testi h5 {
+     font-size: 40px;
+     margin-top: 20px;
+ }
+ /*ware8*/
+
+.ware8{
+     height: 700px;
+}
+
+ .nasitext h2 {
+     font-size: 21px;
+}
+ .nasitext p {
+     font-size: 13px;
+ }
+ .nasitext .text-1 {
+     margin-top: 85px;
+ }
+ .nasitext .text-2 {
+     margin-top: 78px;
+ }
+ .nasitext .text-3 {
+     margin-top: 85px;
+ }
+ /*nasi img*/
+ .nasimg-2 .ddis4 {
+     margin-top: 57px;
+ }
+ .nasimg-2 .ddis5 {
+     margin-top: 12px;
+ }
+ .nasimg-2 .ddis6 {
+     margin-top: 34px;
+ }
+ /*nasi text*/
+ .nasitext .text-4 {
+     margin-top: 77px;
+ }
+ .nasitext .text-5 {
+     margin-top: 80px;
+ }
+ .nasitext .text-6 {
+     margin-top: 87px;
+ }
+
+ /*ware9*/
+ .follow p {
+     font-size: 16px;
+}
+
+/*footer*/
+
+footer .container .row .col-4 p{
+     font-size: 12px;
+}
+footer .container .row .col-8 .row-1{
+     padding: 0px;
+}
+
+
+}
+
+@media(min-width: 993px) and (max-width: 1200px){
+
+/*header*/
+}
+
+@media(min-width: 1201px){
+}
+
